@@ -1,2 +1,1 @@
-# sourceit
-Soruce-it cources repository
+sourceit
