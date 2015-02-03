@@ -165,7 +165,6 @@ button{
 #header .white_block{
 	width: 957px;
 	height:95px;
-	float:left;
 	border-radius:13px;
 	background-color:#fff;
 	margin-top:3px;
@@ -180,7 +179,7 @@ button{
 	display:block;
 	width:191px;
 	height:55px;
-	background:url(../images/logo.png);
+	background:url(../images/logo.png) no-repeat;
     margin: 9px 0 0 33px;
 }
 
@@ -191,16 +190,7 @@ button{
 
 #header .white_block #nav ul
 {
-	background: -moz-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
-    background: -webkit-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
-    background: -o-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
-    background: -ms-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
-    background: linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
 	height:32px;
-	background-position: 45% 101%;
-	-webkit-background-size: 100px auto;
-    background-repeat: no-repeat;
-    background-size: 449px auto;
 }
 #header .white_block #nav ul li{
 	float:left;
@@ -208,11 +198,11 @@ button{
 	height:32px;
     line-height: 29px;
 	position:relative;
-	background:url(../images/bkg_menu_left_vert_line.png) no-repeat, url(../images/bkg_menu_right_vert_line.png) no-repeat right;
-    background:url(../images/bkg_menu_left_vert_line.png) no-repeat, url(../images/bkg_menu_right_vert_line.png) no-repeat right;
-    background:url(../images/bkg_menu_left_vert_line.png) no-repeat, url(../images/bkg_menu_right_vert_line.png) no-repeat right;
-    background:url(../images/bkg_menu_left_vert_line.png) no-repeat, url(../images/bkg_menu_right_vert_line.png) no-repeat right;
-    background:url(../images/bkg_menu_left_vert_line.png) no-repeat, url(../images/bkg_menu_right_vert_line.png) no-repeat right;
+	background: -moz-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
+    background: -webkit-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
+    background: -o-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
+    background: -ms-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
+    background: linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
 }
 
 #header .white_block #nav ul li a{
@@ -221,17 +211,27 @@ button{
 	font-family: 'MyriadPro-Cond', serif;
 	text-shadow: 1px 1px 1px #000;
 	letter-spacing:0;
+    display:block;
+    width:100%;
+    height:100%;
+    background: url(../images/bkg_menu_left_vert_line.png) no-repeat, url(../images/bkg_menu_right_vert_line.png) no-repeat right;
+}
+#header .white_block #nav ul li:nth-child(1){
+    border-radius:16px 0 0 16px;
+    width:109px;
 }
 
-#header .white_block #nav ul li:nth-child(1) {
-	background:url(../images/bkg_first_menu_btn.png) no-repeat, url(../images/bkg_menu_right_vert_line.png) no-repeat right, -moz-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
-	background:url(../images/bkg_first_menu_btn.png) no-repeat, url(../images/bkg_menu_right_vert_line.png) no-repeat right, -webkit-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
-    background:url(../images/bkg_first_menu_btn.png) no-repeat, url(../images/bkg_menu_right_vert_line.png) no-repeat right, -o-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
-    background:url(../images/bkg_first_menu_btn.png) no-repeat, url(../images/bkg_menu_right_vert_line.png) no-repeat right, -ms-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
-    background:url(../images/bkg_first_menu_btn.png) no-repeat, url(../images/bkg_menu_right_vert_line.png) no-repeat right, linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
-	width:109px;
-	border-top-left-radius:15px;
-	border-bottom-left-radius:15px;
+#header .white_block #nav ul li:nth-child(1) a{
+	background: url(../images/bkg_first_menu_btn.png) no-repeat, url(../images/bkg_menu_right_vert_line.png) no-repeat right;
+}
+
+#header .white_block #nav ul li:nth-child(6) {
+	width:139px;
+    border-radius:0 15px 15px 0;
+}
+
+#header .white_block #nav ul li:nth-child(6) a{
+	background: url(../images/bkg_menu_left_vert_line.png) no-repeat, url(../images/bkg_last_menu_btn.png) no-repeat right;
 }
 
 #header .white_block #nav ul li:nth-child(2){width:140px;}
@@ -239,38 +239,22 @@ button{
 #header .white_block #nav ul li:nth-child(4) {width:90px;}
 #header .white_block #nav ul li:nth-child(5) {width:118px;}
 
-#header .white_block #nav ul li:nth-child(6) {
-	width:139px;
-	background:url(../images/bkg_menu_left_vert_line.png) no-repeat, url(../images/bkg_last_menu_btn.png) no-repeat right, -moz-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
-	background:url(../images/bkg_menu_left_vert_line.png) no-repeat, url(../images/bkg_last_menu_btn.png) no-repeat right, -webkit-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
-    background:url(../images/bkg_menu_left_vert_line.png) no-repeat, url(../images/bkg_last_menu_btn.png) no-repeat right, -o-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
-    background:url(../images/bkg_menu_left_vert_line.png) no-repeat, url(../images/bkg_last_menu_btn.png) no-repeat right, -ms-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
-    background:url(../images/bkg_menu_left_vert_line.png) no-repeat, url(../images/bkg_last_menu_btn.png) no-repeat right, linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
-	border-top-right-radius:15px;
-	border-bottom-right-radius:15px;
-}
 
-#header .white_block #nav ul li:nth-child(1) a{ margin-left: 2px;}
-#header .white_block #nav ul li:nth-child(2) a{ margin-right: 4px;}
-#header .white_block #nav ul li:nth-child(3) a{ margin-right: 1px;}
-#header .white_block #nav ul li:nth-child(4) a{ margin-right: 3px;}
-#header .white_block #nav ul li:nth-child(5) a{ margin-right: 11px;}
-#header .white_block #nav ul li:nth-child(6) a{ margin-right: 23px;}
 
-#header .white_block #nav ul li:hover{
-	border-radius:4px;
+#header .white_block #nav ul li a:hover{
 	background:-moz-linear-gradient(top , #ffbe4f 0px, #f47a24 100%);
-    background:-webkit-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
-    background:-o-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
-    background:-ms-linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
-    background:linear-gradient(top , #0a98e8 0px, #1d9bde 17px, #057bcd 18px, #0a67b6 100%);
+    background:-webkit-linear-gradient(top , #ffbe4f 0px, #f47a24 100%);
+    background:-o-linear-gradient(top , #ffbe4f 0px, #f47a24 100%);
+    background:-ms-linear-gradient(top , #ffbe4f 0px, #f47a24 100%);
+    background:linear-gradient(top , #ffbe4f 0px, #f47a24 100%);
+    border-radius:4px;
 }
 
-#header .white_block #nav ul li:nth-child(1):hover {
-	border-radius:13px 4px 4px 15px;
+#header .white_block #nav ul li:nth-child(1) a:hover {
+	border-radius:15px 4px 4px 15px;
 }
 
-#header .white_block #nav ul li:nth-child(6):hover {
+#header .white_block #nav ul li:nth-child(6) a:hover {
 	border-radius:4px 15px 15px 4px;
 }
 
@@ -295,7 +279,6 @@ button{
 }
 
 #header .orange_block{
-	float:left;
 	width:957px;
 	height:117px;
 	border-radius:13px;
@@ -397,6 +380,7 @@ button{
     line-height: 23px;
     text-shadow: 1px 1px 1px #4f1d04;
 	margin-left: 3px;
+    float: left;
 }
 
 #header .orange_block  .how_it_works{
@@ -451,7 +435,6 @@ button{
 .main{
 	margin: 0 auto;
     width: 959px;
-    overflow:hidden;
 }
 
 .main .sponsor{
@@ -486,10 +469,6 @@ button{
     line-height: 14.5px;
     letter-spacing: -0.1px;
     margin: 153px 0 0 350px;
-}
-
-.main ul.prize {
-    float: left;
 }
 
 .main ul.prize li {
@@ -595,8 +574,8 @@ button{
     background-origin: padding-box;
     -webkit-background-clip: border-box;
     background-clip: border-box;
-    -webkit-background-size: 66% auto, auto auto;
-    background-size: 66% auto, auto auto;
+    -webkit-background-size: 66% 100%, auto auto;
+    background-size: 66% 100%, auto auto;
     -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
     line-height: 22px;
     text-shadow:1px 1px 1px rgba(255,255,255,0.75)
@@ -952,6 +931,7 @@ button{
 
 .main .white_block .winners {
     float: left;
+    width:640px;
 }
 
 .main .white_block .winners h2{
@@ -1086,6 +1066,7 @@ footer{
     background: url(../images/bkg_footer.png) repeat;
     overflow: hidden;
     height:121px;
+    clear:both;
 }
 
 footer ul{
